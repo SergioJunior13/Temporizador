@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Temporizador Online para contar o tempo">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Sérgio Júnior">
+    <meta name="keywords" content="temporizador,temporizador online,cronometro">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Temporizador Online</title>
+</head>
+
+<body>
+    <header>
+        <h1>Temporizador Online</h1>
+    </header>
+    <main>
+        <div class="divTemporizador">
+            <div id="inputs">
+                <input type="text" id="horas" maxlength="2" oninput="verificar(event)" value="00">:<input type="text"
+                    id="minutos" maxlength="2" oninput="verificar(event)" value="00">:<input type="text" id="segundos"
+                    maxlength="2" oninput="verificar(event)" value="00">
+
+                </div>
+                <div class="hidden" id="divResultado">
+                    <div class="resultado" id="resultado">00:00:00</div>
+                </div>
+                <div class="botoes">
+                    <button onclick="resetar()">Resetar</button>                <button onclick="pausar()" id="btnPausar">Pausar</button>
+                    <button onclick="iniciar()" id="btnIniciar">Iniciar</button>
+                </div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

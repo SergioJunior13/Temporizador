@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background: linear-gradient(45deg, #5433ff, #20bdff, #87f8b8, #05a11a);
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-size: 20px;
+    background-size: 600% 600%;
+    -webkit-animation: GradientAnimation 20s ease infinite;
+    -moz-animation: GradientAnimation 20s ease infinite;
+    animation: GradientAnimation 20s ease infinite;
+}
+
+header {
+    padding-top: 10vh;
+    position: absolute;
+    width: 100vw;
+}
+
+main {
+    margin: auto;
+    width: fit-content;
+}
+
+.divTemporizador {
+    font-size: 50px;
+}
+
+input {
+    width: 60px;
+    text-align: center;
+    font-size: 50px;
+    background: none;
+    border: none;
+    color: white;
+    outline: none;
+    padding: 0 4px;
+}
+
+button {
+    background: transparent;
+    padding: 5px 0;
+    border: 3px solid white;
+    color: white;
+    border-radius: 8px;
+    font-size: 20px;
+    width: 90px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+button:hover {
+    color: #fffc;
+    border-color: #fffc;
+}
+
+button:disabled {
+    color: #0005;
+    border-color: #0005;
+}
+
+.hidden {
+    display: none;
+}
+
+.resultado,input {
+    font-family: monospace;
+}
+
+/*Animacão do fundo*/
+
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
+    }
+    50% {
+        background-position: 4% 100%
+    }
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
+    }
+    50% {
+        background-position: 4% 100%
+    }
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
+    }
+    50% {
+        background-position: 4% 100%
+    }
+    100% {
+        background-position: 97% 0%
+    }
+}
