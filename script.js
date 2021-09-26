@@ -36,8 +36,8 @@ function iniciar() {
 
     var tempoHora = inputHora.value * 60 * 60 * 1000
     var tempoMinuto = inputMinuto.value * 60 * 1000
-    if(diferenca == 0){
-    var tempoSegundo = (inputSegundo.value * 1000) + 1000
+    if (diferenca == 0) {
+        var tempoSegundo = (inputSegundo.value * 1000) + 1000
     }
     else {
         var tempoSegundo = (inputSegundo.value * 1000)
