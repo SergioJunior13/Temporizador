@@ -147,6 +147,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.ad {
+ height: 200px;
+}
+
 /*Dark mode*/
 
 .dark header, .dark .info {
