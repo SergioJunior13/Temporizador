@@ -27,28 +27,62 @@
 <body>
     <header>
         <h1>Temporizador Online</h1>
+        <div>
+            <div class="links">
+                <a href="#inicio">Início</a>
+                <a href="#info">Sobre</a>
+                <a href="https://cronometronline.netlify.app" target="_blank" class="link-cronometro">Cronômetro Online</a>
+            </div>
+            <button onclick="mudarTema()"><img src="theme.svg" alt="change-theme" class="theme-img"></button>
+        </div>
     </header>
-    <main>
+    <main id="inicio">
         <div class="divTemporizador">
             <div id="inputs">
                 <input type="text" id="horas" maxlength="2" oninput="verificar(event)" value="00">:<input type="text"
                     id="minutos" maxlength="2" oninput="verificar(event)" value="00">:<input type="text" id="segundos"
                     maxlength="2" oninput="verificar(event)" value="00">
 
-                </div>
-                <div class="hidden" id="divResultado">
-                    <div class="resultado" id="resultado">00:00:00</div>
-                </div>
-                <div class="botoes">
-                    <button onclick="resetar()">Resetar</button>
-                    <button onclick="pausar()" id="btnPausar">Pausar</button>
-                    <button onclick="iniciar()" id="btnIniciar">Iniciar</button>
-                </div>
+            </div>
+            <div class="hidden" id="divResultado">
+                <div class="resultado" id="resultado">00:00:00</div>
+            </div>
+            <div class="botoes">
+                <button onclick="resetar()">Resetar</button> <button onclick="pausar()" id="btnPausar">Pausar</button>
+                <button onclick="iniciar()" id="btnIniciar">Iniciar</button>
+            </div>
         </div>
     </main>
-    <footer>
-        <a href="https://cronometronline.netlify.app" target="_blank">Cronômetro Online</a>
-    </footer>
+    <div class="info" id="info">
+        <section class="sobre">
+            <h1>Sobre este temporizador</h1>
+            <p>Este temporizador faz uma contagem regressiva do tempo que o usuário escolher até 0.</p>
+            <p>Quando a contagem regressiva chegar a 0, um som irá começar a tocar indicando que o tempo acabou.</p>
+        </section>
+        <section class="comoUsar">
+            <h1>Como usar</h1>
+            <p>Para informar o tempo desejado, basta clicar em alguma seção e digitar o tempo(Só é possível digitar dois
+                algarismos).<br>
+                Os primeiros dois zeros representam as horas, os dois zeros do meio representam os minutos e os últimos
+                dois zeros representam os segundos.</p>
+            <p>Para começar a contagem regressiva clique no botão "Iniciar".</p>
+            <p>Para pausar a contagem regressiva clique no botão "Pausar."</p>
+            <p>Para zerar a contagem regressiva clique no botão "Resetar".</p>
+        </section>
+        <section class="precauções">
+            <h1>Precauções</h1>
+            <p>Se você reiniciar ou fechar a página o temporizador será reiniciado e o tempo não ficará salvo.<br>Se
+                você fechar o navegador ou ficar muito tempo sem abri-lo o temporizador irá parar de contar o tempo.</p>
+            <p>Deixe o volume do seu dispositivo alto caso você queira ser alertado quando o tempo acabar.</p>
+        </section>
+        <section class="diferencas">
+            <h1>Diferenças entre um temporizador e um cronômetro</h1>
+            <p>Um temporizador faz uma contagem regressiva de um determinado tempo até zero.</p>
+            <p>Já um cronômetro conta o tempo que passou desde que ele foi iniciado.<br>Se você está procurando um
+                cronômetro vá neste site: <a href="https://cronometronline.netlify.app"
+                    target="_blank">cronometronline</a>.</p>
+        </section>
+    </div>
     <script src="script.js"></script>
 </body>
 
