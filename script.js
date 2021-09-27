@@ -85,7 +85,7 @@ function resetar() {
     clearInterval(loop)
     diferenca = 0
     resultado.innerHTML = "00:00:00"
-    titulo.innerHTML = "00:00:00"
+    titulo.innerHTML = "Temporizador Online"
     inputHora.value = "00"
     inputMinuto.value = "00"
     inputSegundo.value = "00"
@@ -107,4 +107,8 @@ function formatar(numero) {
         numero = "0" + numero;
     }
     return numero;
+}
+
+function mudarTema() {
+    document.body.classList.toggle("dark")
 }
