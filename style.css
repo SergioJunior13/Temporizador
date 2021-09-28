@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(45deg, #5433ff, #20bdff, #87f8b8, #05a11a);
+    background: linear-gradient(245deg, #5433ff, #3385ff, #5433ff);
     background-attachment: fixed;
     color: white;
     text-align: center;
@@ -31,6 +31,7 @@ header {
     background: #e0e0e0;
     position: sticky;
     top: 0;
+    border-bottom: 2.5px solid #464646;
 }
 
 header h1 {
@@ -217,38 +218,42 @@ html {
         width: 70px;
         font-size: 17px;
     }
-    /*Animacão do fundo*/
-    @-webkit-keyframes GradientAnimation {
-        0% {
-            background-position: 97% 0%
-        }
-        50% {
-            background-position: 4% 100%
-        }
-        100% {
-            background-position: 97% 0%
-        }
+}
+
+/*Animacão do fundo*/
+
+@-webkit-keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
     }
-    @-moz-keyframes GradientAnimation {
-        0% {
-            background-position: 97% 0%
-        }
-        50% {
-            background-position: 4% 100%
-        }
-        100% {
-            background-position: 97% 0%
-        }
+    50% {
+        background-position: 4% 100%
     }
-    @keyframes GradientAnimation {
-        0% {
-            background-position: 97% 0%
-        }
-        50% {
-            background-position: 4% 100%
-        }
-        100% {
-            background-position: 97% 0%
-        }
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
+    }
+    50% {
+        background-position: 4% 100%
+    }
+    100% {
+        background-position: 97% 0%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 97% 0%
+    }
+    50% {
+        background-position: 4% 100%
+    }
+    100% {
+        background-position: 97% 0%
     }
 }
