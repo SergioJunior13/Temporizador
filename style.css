@@ -158,6 +158,7 @@ html {
 
 .dark header a, .dark .info a {
     color: white;
+    text-decoration-color: white;    
 }
 
 .dark img {
